@@ -1,0 +1,287 @@
+body.home{
+	margin: 0;
+	font-family: "Lora", serif;
+}
+
+img{
+	width: 100%;
+}
+
+.clearfix{
+	clear: both;
+}
+
+body.home header{
+	background-image: url("../images/mainbanner_opt1.jpg");
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+body.home header img {
+	width: 300px;
+	margin: 10px 0 0 30px;
+}
+
+body.home nav{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+body.home nav ul li{
+	float: left;
+	margin-left: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	list-style: none;
+}
+
+body.home nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+body.home header h1{
+	font-family: "Open Sans", sans-serif;
+	font-size: 96px;
+	font-weight: 800;
+	color: #88EBF2;
+	margin: 0;
+}
+
+body.home header h3{
+	font-family: "Open Sans", sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	color: white;
+	letter-spacing: 40px;
+	margin: 0;
+}
+
+#blurb{
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+}
+
+body.home main{
+	background-color: #DDD9D8;
+}
+
+.section-title{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.section-title h2{
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 30px;
+	margin: 0;
+}
+
+#services{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+}
+
+.card{
+	width: 300px;
+	float: left;
+	margin-left: 30px;
+}
+
+.card:first-child{
+	margin-left: 0;
+}
+
+.card h4{
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.card p{
+	font-size: 14px;
+}
+
+footer{
+	background-color: #88EBF2;
+}
+
+.footercontainer{
+	background-color: #88EBF2;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footercard{
+	font-family: "Lora", serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #0B5B60;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	float: left;
+	margin-left: 30px;
+}
+
+.footercard img{
+	width: 300px;
+}
+
+.footercard:first-child{
+	margin: 0;
+}
+
+.footercard:nth-child(2) p{
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.footermap:nth-child(2){
+	margin-left: 0px;
+}
+
+.footermap{
+	float: left;
+	margin-left: 15px;
+}
+
+.footernav ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.footernav ul li{
+	float: left;
+	list-style: none;
+	margin-left: 54px;
+}
+
+.footernav ul li:first-child{
+	margin-left: 0;
+}
+
+.footernav ul li a{
+	color: #0B5B60;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+
+.footernav ul li a:hover{
+	color: white;
+}
+
+.subfooter{
+	background-color: #60A3A9;
+}
+
+.copyright{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.copyright ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+.copyright ul li{
+	float: left;
+	margin-left: 530px;
+}
+
+.copyright ul li:first-child{
+	margin-left: 0;
+}
+
+.copyright ul li{
+	color: #1D3335;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+
+body.contact{
+	margin: 0;
+	font-family: "Lora", serif;
+}
+
+body.contact nav{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+body.contact .navbar{
+	background-color: #675F5D;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+body.contact .navbar img{
+	width: 300px;
+}
+
+body.contact .navbar ul li{
+	float: left;
+	margin-left: 30px;
+	font-family: "Open Sans", sans-serif;
+	list-style: none;
+}
+
+body.contact .navbar ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+body.contact #contactus{
+	background-color: #DDD9D8;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body.contact #contactus h1{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+body.contact .maincontainer{
+	background-color: white;
+	height: 100vh;
+	padding-bottom: 100%;
+	padding-top: 80px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body.contact .mapcard{
+	float: left;
+	margin-left: 30px;
+}
+
+body.contact .mapcard:nth-child(2){
+	width: 285px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
