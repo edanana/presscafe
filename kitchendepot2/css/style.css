@@ -16,7 +16,7 @@ body{
 
 }
 
-/* header *********************************************************/
+/* header */
 
 .header{
 	max-width: 960px;
@@ -77,7 +77,7 @@ body{
 }
 
 
-/* main **********************************************************/
+/* Main */
 
 main{
 	max-width: 960px;
@@ -123,7 +123,7 @@ main{
 	letter-spacing: 2px;
 }
 
-/* intro ********************************************************/
+/* Intro */
 
 .intro{
 	display: flex;
@@ -508,11 +508,12 @@ footer{
 }
 
 .subfooter-content{
-	max-width: 960px;
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	padding:5px 0;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding:5px 0;
 }
 
 .subfooter-content p{
@@ -521,10 +522,15 @@ footer{
 }
 
 .subfooter-content img{
-	width: 14px;
-	margin-right: 5px;
-	filter: invert(1);
-	opacity: 50%;
+    width: 14px;
+    margin-right: 5px;
+    margin-left: 0;
+    filter: invert(1);
+    opacity: 50%;
+}
+
+.subfooter-content p:first-child{
+    margin-right: auto;
 }
 
 .copyright{
