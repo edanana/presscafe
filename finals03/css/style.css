@@ -159,6 +159,20 @@ a {
 }
 
 /* Main */
+.gold-divider {
+  height: 4px;
+  background-color: #dca658; 
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.full-width-line {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .hero-content {
   position: relative;
