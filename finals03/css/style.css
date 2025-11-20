@@ -594,24 +594,5 @@ margin-bottom: -8px; }
     max-width: 100%;
   }
 
-  /* Desktop: full-width gallery */
-@media (min-width: 769px) {
-  .gallery-section {
-    /* remove side padding so section touches the viewport edges */
-    padding: 60px 0 50px;
-    align-items: stretch;   /* slider can use full width */
-  }
-
-  .gallery-slider {
-    width: 100%;           /* fill the whole section */
-    max-width: none;       /* override previous max-width: 860px */
-    margin: -90px 0 0;     /* keep your vertical positioning, no auto centering */
-  }
-
-  .slide {
-    flex: 0 0 33.333%;     /* still 3 images per view on web */
-    padding: 0 8px;        /* small inner gap between cards */
-  }
-}
 
 }
