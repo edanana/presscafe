@@ -717,7 +717,7 @@ select:focus {
 /* =========================
    MOBILE – SLIDER
    ========================= */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .gallery-section {
     padding: 40px 16px 32px;
     gap: 20px;
@@ -745,7 +745,7 @@ select:focus {
    MOBILE – HEADER
    ========================= */
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .nav-bar {
     flex-direction: column;     /* stack children vertically */
     align-items:center;    /* or center if you prefer */
@@ -771,7 +771,7 @@ select:focus {
 }
 
 /* ===== Mobile footer: stack logo + columns ===== */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .site-footer {
     padding: 24px 16px;
   }
