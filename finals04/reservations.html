@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>@THE PLACE – Reservation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/finals03/css/style.css" />
+</head>
+<body>
+  <header class="site-header subpage-header">
+    <div class="overlay overlay-light"></div>
+    <nav class="nav-bar">
+      <div class="brand">
+       <img class="header-logo" src="/finals03/images/logo.png">
+      </div>
+      <ul class="nav-links">
+        <li><a href="/finals03/index.html">HOME</a></li>
+        <li><a href="/finals03/reservation.html" class="active">RESERVATION</a></li>
+        <li><a href="/finals03/membership.html">MEMBERSHIP</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content small">
+      <h1 class="hero-title">Reservation</h1>
+    </div>
+  </header>
+
+  <!-- Reservation Info + Form -->
+  <main>
+    <section class="section reserve-layout">
+      <!-- Left info card -->
+      <div class="reserve-info card-3d">
+        <h3>For Reservations call; OR</h3>
+        <div class="phone-block">
+          <div class="phone-icon">📞</div>
+          <div>
+            <p>0917 190 6612</p>
+            <p>0917 190 6461</p>
+          </div>
+        </div>
+        <p class="small">
+          Reservations for exclusive VIP rooms are <strong>subject to availability</strong>; kindly note these bookings must be arranged only via <strong>call</strong>.
+        </p>
+      </div>
+
+      <!-- Right form -->
+      <div class="reserve-form card-3d">
+        <h3>Fill out our reservation form</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" required />
+            </div>
+            <div class="form-group">
+              <label>Pax *</label>
+              <input type="number" min="1" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date *</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Member / Non-member *</label>
+              <select required>
+                <option value="">Please select</option>
+                <option>Member</option>
+                <option>Non-member</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Time *</label>
+              <input type="time" required />
+            </div>
+          </div>
+
+          <div class="form-row terms-row">
+            <label class="checkbox-label">
+              <input type="checkbox" required />
+              <span>I agree to the <a href="#terms">Terms and Conditions *</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-3d full-width">
+            Confirm
+          </button>
+
+          <p class="form-note">
+            Upon clicking confirm, we will send you a message within 48 hours confirming your reservation. Thank you!
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Terms and Conditions -->
+    <section id="terms" class="section terms-section">
+      <h2 class="section-title">Reservation Terms and Conditions</h2>
+      <p>
+        By submitting a reservation request via this form, you acknowledge and agree to the following terms and conditions governing the booking of your seating:
+      </p>
+
+      <div class="terms-columns">
+        <div class="terms-column">
+          <h3>1. Submission and Recommendation</h3>
+          <p>
+            <strong>1.1. Advance Recommendation:</strong> While we endeavor to accommodate all requests, it is strongly recommended that you submit your reservation at least forty-eight (48) hours (two days) in advance of your desired dining time to ensure the best availability and preparation.
+          </p>
+          <p>
+            <strong>1.2. VIP Room Reservations:</strong> Please note that all reservations for the Exclusive VIP Chambers are strictly subject to availability and can only be finalized and confirmed via a direct telephone consultation with our staff.
+          </p>
+
+          <h3>2. Confirmation Protocol</h3>
+          <p>
+            <strong>2.1.</strong> Upon clicking "Confirm," your request enters our system for processing. You will receive an official confirmation message from our team within twenty-four (24) to forty-eight (48) hours of your submission.
+          </p>
+          <p>
+            <strong>2.2.</strong> A reservation is considered final and secured only upon receipt of this official confirmation message. If you do not receive a confirmation message within the stated timeframe, please contact us immediately.
+          </p>
+        </div>
+
+        <div class="terms-column">
+          <h3>3. Cancellation and Amendments</h3>
+          <p>
+            <strong>3.1.</strong> Once the reservation form is submitted, automatic cancellation is not permitted. The reservation is formally recognized as placed.
+          </p>
+          <p>
+            <strong>3.2.</strong> Should you need to amend or cancel your reservation after submission, you must contact us immediately via our designated telephone line. We will endeavor to assist you, but cancellation is not guaranteed.
+          </p>
+
+          <h3>4. Personal Data Usage</h3>
+          <p>
+            <strong>4.1. Privacy:</strong> The personal details provided in the reservation form (Name, Phone Number, Date, Time, Pax) will be used solely for the purpose of processing, confirming, and managing your booking, as well as communicating essential details regarding your dining experience. We are committed to protecting your privacy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section map-section">
+      <div class="map-wrapper card-3d">
+        <iframe
+          title="The Place Deluxe Buffet Map"
+          src="https://www.google.com/maps?q=The%20Place%20Deluxe%20Buffet%20Ayala%20Malls%20Manila%20Bay&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <p class="map-caption">
+        Ground Floor, Ayala Malls Manila Bay, Aseana City, Brgy. Tambo, Parañaque City
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="header-logo" src="/finals03/images/logo.png">
+      </div>
+
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <a href="/finals03/reservation.html">Reservation</a>
+        <a href="/finals03/membership.html">Membership</a>
+        <a href="#">Support</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Location</h4>
+        <p>Ground Floor, Ayala Malls<br/>Manila Bay, Aseana City,<br/>Brgy. Tambo, Parañaque City</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>0917 190 6612<br/>0917 190 6461</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <a href="#">Facebook</a><br/>
+        <a href="#">www.theplace.ph</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
