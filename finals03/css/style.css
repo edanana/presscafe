@@ -256,15 +256,15 @@ a {
 .gallery-section {
   padding: 60px min(7vw, 80px) 50px;
   display: flex;
-  flex-direction: column;   
-  align-items: center;      
-  gap: 30px;                
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .gallery-slider {
   position: relative;
-  max-width: 860px;          
-  margin: -90px auto;
+  max-width: 860px;
+  margin: -80px auto 0;
   overflow: hidden;
 }
 
@@ -275,7 +275,7 @@ a {
 
 .slide {
   flex: 0 0 33.333%;
-  padding: 0 3px;
+  padding: 0 4px;
   opacity: 0.35;
   transform: scale(0.92);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -283,9 +283,10 @@ a {
 
 .slide img {
   width: 100%;
-  height: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
   display: block;
-  border-radius: 12px;
 }
 
 .slide.is-active {
@@ -298,7 +299,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.35);
   color: #ffffff;
   width: 36px;
   height: 36px;
@@ -308,6 +309,7 @@ a {
   place-items: center;
   font-size: 1.4rem;
   z-index: 2;
+  backdrop-filter: blur(4px);
 }
 
 .slider-arrow.left {
@@ -320,13 +322,11 @@ a {
 
 .intro-text {
   max-width: 780px;
-  margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 70px auto 80px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #0c3044
-  line-height 1.7;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #0c3044;
+  line-height: 1.7;
   font-size: 1rem;
 }
 
@@ -476,19 +476,17 @@ margin-bottom: -8px; }
   font-size: 0.86rem;
 }
 
-
-
-
-
 /* Mobile - gallery*/
+
 @media (max-width: 480px) {
   .gallery-section {
-    padding: 40px 16px 32px;
-    gap: 20px;
+    padding: 32px 16px 24px;
+    gap: 16px;
   }
 
   .gallery-slider {
     max-width: 100%;
+    margin: 0 auto;
   }
 
   .slide {
@@ -496,12 +494,22 @@ margin-bottom: -8px; }
     padding: 0;
   }
 
+  .slide img {
+    height: 200px;
+  }
+
+  .slider-arrow.left {
+    left: 8px;
+  }
+
+  .slider-arrow.right {
+    right: 8px;
+  }
+
   .intro-text {
+    margin: 24px 10px 40px;
     font-size: 0.9rem;
-    padding: 0 4px;
-    margin-top: 150px;
-    margin-bottom: 80px;
-    margin-inline: 10px;
+    padding: 0;
   }
 }
 
