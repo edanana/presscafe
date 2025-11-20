@@ -283,6 +283,7 @@ a {
 
 .slide img {
   width: 100%;
+  height: 130px;
   display: block;
   border-radius: 12px;
 }
@@ -320,8 +321,8 @@ a {
 .intro-text {
   max-width: 780px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #0c3044
