@@ -323,8 +323,8 @@ a {
 .intro-text { 
   max-width: 780px; 
   margin: 0 auto; 
-  margin-top: 10px; 
-  margin-bottom: 80px; 
+  margin-top: -20px; 
+  margin-bottom: 50px; 
   text-align: center; 
   font-family: Georgia, 'Times New Roman', Times, serif; 
   color: #0c3044; 
