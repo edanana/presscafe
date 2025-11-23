@@ -450,6 +450,10 @@ margin-bottom: -12px; }
    margin: 0 0 3px;
 }
 
+.footer-location {
+  margin-right: 100px;
+}
+
 .footer-column a {
   color: #fff7ec;
   position: relative;
@@ -471,6 +475,7 @@ margin-bottom: -12px; }
   gap: 32px;
   grid-template-columns: minmax(260px, 1.2fr) 2fr;
   background: #f7f1e4;
+  align-items: start;
 }
 
 .reserve-info h3 {
