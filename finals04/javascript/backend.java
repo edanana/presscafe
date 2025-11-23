@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector("[data-slider]");
   if (!slider) return;
 

@@ -47,7 +47,7 @@ a {
 }
 
 .section-title {
-  font-family: "Playfair Display", serif;
+font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.9rem;
   margin-bottom: 16px;
   letter-spacing: 0.08em;
@@ -59,7 +59,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
 }
@@ -169,7 +169,7 @@ a {
 .hero-content {
   position: relative;
   z-index: 5;
-  padding: 120px min(7vw, 80px) 110px;
+  padding: 50px min(7vw, 80px) 110px;
   max-width: 640px;
   transform-style: preserve-3d;
 }
@@ -298,17 +298,12 @@ a {
 
 .intro-text {
   max-width: 780px;
-  margin: 20px auto;
+  margin: 20px auto 24px;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #0c3044;
   line-height: 1.7;
   font-size: 1rem;
-
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .intro-text p {
@@ -479,7 +474,6 @@ margin-bottom: -12px; }
 }
 
 .reserve-info h3 {
-  font-family: "Playfair Display", serif;
   margin-top: 0;
 }
 
@@ -496,13 +490,13 @@ margin-bottom: -12px; }
 
 .reserve-info .small {
   font-size: 0.88rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.8;
   color: #224254;
 }
 
 .reserve-form h3 {
   margin-top: 0;
-  font-family: "Playfair Display", serif;
 }
 
 .form-row {
@@ -573,13 +567,13 @@ select:focus {
 }
 
 .terms-column h3 {
-  font-family: "Playfair Display", serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 18px;
 }
 
 .terms-column p {
   font-size: 0.9rem;
-  color: var(--muted);
+  color:#0c3044;
 }
 
 /* Map */
