@@ -62,16 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // autoplay every 8 seconds
-  let timer = setInterval(goNext, 8000);
-
-  // pause on hover (desktop)
-  slider.addEventListener("mouseenter", () => {
-    clearInterval(timer);
-  });
-
-  slider.addEventListener("mouseleave", () => {
-    timer = setInterval(goNext, 8000);
-  });
+  let timer = setInterval(goNext, 5000);
 
   // recompute layout on resize (desktop ↔ mobile)
   window.addEventListener("resize", computeLayout);
