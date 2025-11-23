@@ -1,3 +1,4 @@
+// GALLERY SLIDER – full width, auto-loop, center highlight
 document.addEventListener("DOMContentLoaded", () => {
   const slider = document.querySelector("[data-slider]");
   if (!slider) return;
@@ -5,41 +6,42 @@ document.addEventListener("DOMContentLoaded", () => {
   const track  = slider.querySelector("[data-slider-track]");
   const slides = Array.from(track.children);
 
-  const AUTOPLAY_DELAY = 5000;
-
-  let slidesPerView   = window.innerWidth <= 480 ? 1 : 3;
-  let slideWidthPercent = 100 / slidesPerView;
-  let centerOffset      = Math.floor(slidesPerView / 2);
-
-  let currentIndex = centerOffset;
+  const totalSlides = slides.length;
+  let slideWidthPercent = window.innerWidth <= 480 ? 100 : 33.3333;
+  let currentIndex = window.innerWidth <= 480 ? 0 : 1;
 
   function updateSlider() {
     slides.forEach((slide, i) => {
       slide.classList.toggle("is-active", i === currentIndex);
     });
 
-    const offset = (currentIndex - centerOffset) * slideWidthPercent;
+    const offset = currentIndex * slideWidthPercent;
     track.style.transform = `translateX(-${offset}%)`;
   }
 
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
+  function goNext() {
+    currentIndex = (currentIndex + 1) % totalSlides;
     updateSlider();
   }
 
-  let autoplayId = setInterval(nextSlide, AUTOPLAY_DELAY);
+  let timer = setInterval(goNext, 8000);
 
-  slider.addEventListener("mouseenter", () => clearInterval(autoplayId));
+  slider.addEventListener("mouseenter", () => {
+    clearInterval(timer);
+  });
+
   slider.addEventListener("mouseleave", () => {
-    autoplayId = setInterval(nextSlide, AUTOPLAY_DELAY);
+    timer = setInterval(goNext, 8000);
   });
 
   window.addEventListener("resize", () => {
-    slidesPerView     = window.innerWidth <= 480 ? 1 : 3;
-    slideWidthPercent = 100 / slidesPerView;
-    centerOffset      = Math.floor(slidesPerView / 2);
+    const isMobile = window.innerWidth <= 480;
+    slideWidthPercent = isMobile ? 100 : 33.3333;
 
-    currentIndex = Math.min(currentIndex, slides.length - 1);
+    if (isMobile && currentIndex === 1) {
+      currentIndex = 0;
+    }
+
     updateSlider();
   });
 
