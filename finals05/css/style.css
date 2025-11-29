@@ -647,17 +647,13 @@ select:focus {
 /* Membership */
 
 .membership-rates {
-  background: var(--cream);
+  background: #fff7ec;
 }
 
 .membership-rates .rates-grid {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.rates-block {
-  background: #ffffff;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .rates-block h2 {
