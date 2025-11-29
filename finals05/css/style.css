@@ -65,7 +65,11 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-header {
-  background-image: url("/finals03/images/main_img.png");
+  background-image: url("/finals05/images/main_img.png");
+}
+
+.member-header {
+  background-image: url("/finals05/images/img3.jpg");
 }
 
 .overlay {
@@ -73,6 +77,14 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   inset: 0;
   background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent),
               linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.9));
+  z-index: 0;
+}
+
+.overlay-member {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(209, 175, 138, 0.54), transparent),
+              linear-gradient(to bottom, rgba(236, 143, 110, 0.122), rgba(0, 0, 0, 0.9));
   z-index: 0;
 }
 
@@ -611,29 +623,25 @@ select:focus {
 .membership-hero-grid {
   position: relative;
   z-index: 5;
-  padding: 70px min(7vw, 80px) 60px;
+  padding: 20px min(7vw, 80px) 60px;
   display: grid;
-  gap: 32px;
+  gap: 120px;
   grid-template-columns: minmax(280px, 1.5fr) minmax(220px, 1fr);
   align-items: center;
 }
 
 .membership-copy {
-  background: rgba(10, 37, 51, 0.72);
-  color: #fff5dd;
+  background: #ffffff
 }
 
 .membership-copy ul {
-  padding-left: 20px;
-  font-size: 0.9rem;
+  padding-left: 30px;
+  font-size: 1.2rem;
+  font-family:"Lato", system-ui
 }
 
 .membership-copy li + li {
   margin-top: 4px;
-}
-
-.membership-card-visual img {
-  border-radius: var(--radius-lg);
 }
 
 /* Membership */
@@ -642,10 +650,10 @@ select:focus {
   background: var(--cream);
 }
 
-.rates-grid {
+.membership-rates .rates-grid {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .rates-block {
@@ -653,27 +661,23 @@ select:focus {
 }
 
 .rates-block h2 {
-  font-family: "Playfair Display", serif;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 0 0 6px;
+  margin: 0 0 5px;
+  color: #dca658
 }
 
 .rate-subtitle {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--muted);
-  margin-top: 0;
+  margin-top: -1px;
 }
 
 .rates-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 50px;
   margin-top: 18px;
-}
-
-.rates-row.single {
-  justify-content: space-between;
 }
 
 .rate-col h3 {
@@ -681,11 +685,13 @@ select:focus {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: #dca658
 }
 
 .rate-col p {
   margin: 4px 0;
   font-size: 0.9rem;
+  color: #946b3e;
 }
 
 .rate-col .label {
@@ -693,11 +699,19 @@ select:focus {
   margin-right: 6px;
 }
 
+.membership-header {
+  font-size: 1.8rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #946b3e;
+  padding-left: 60px;
+}
+
 .membership-list {
   list-style: disc;
   padding-left: 20px;
   font-size: 0.9rem;
-  color: var(--muted);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #946b3e
 }
 
 .membership-note {
@@ -706,6 +720,30 @@ select:focus {
   font-size: 0.9rem;
 }
 
+/* CARD STACK */
+.card-stack {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.card-stack .card {
+  width: 100%;
+  border-radius: 14px;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.35));
+}
+
+.card-stack .card-back {
+  transform: rotate(-7deg) translate(-20px, 10px);
+  z-index: 1;
+}
+
+.card-stack .card-front {
+  transform: rotate(4deg) translate(20px, -10px);
+  z-index: 2;
+}
 
 /* Mobile - gallery*/
 
@@ -863,3 +901,80 @@ select:focus {
   }
 }
 
+/* Mobile – Membership */
+@media (max-width: 480px) {
+  .membership-hero-grid {
+    padding: 18px 16px 26px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .membership-copy {
+    padding: 16px 35px;
+  }
+
+  .membership-copy ul {
+    padding-left: 18px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .membership-header {
+    font-size: 1.35rem;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .card-stack {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .card-stack .card-back {
+    transform: rotate(-6deg) translate(-10px, 8px);
+  }
+
+  .card-stack .card-front {
+    transform: rotate(4deg) translate(10px, -8px);
+  }
+
+  .membership-rates .rates-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .rates-block {
+    padding: 16px 35px 16px;
+  }
+
+  .rates-block h2 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+
+  .rate-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .rates-row {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 12px;
+  }
+
+  .rate-col h3 {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .rate-col p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    word-break: break-word;
+  }
+
+  .rates-block.wide {
+    grid-column: auto;
+  }
+}
